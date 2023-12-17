@@ -1,0 +1,135 @@
+@import url("./reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root{
+	--back: #141415;
+	--header: #313131;
+	--color: white;
+}
+::selection{
+	background: none;
+	color: lightskyblue;
+}
+::-webkit-scrollbar{
+	width: 5px;
+	background: none;
+}
+::-webkit-scrollbar-thumb{
+	width: 5px;
+	background-color: rgb(189, 189, 189);
+	border-radius: 15px;
+	margin-right: 2px;
+}
+
+
+
+
+a{
+	color: #51ACFF;
+	transition: color .5s;
+}
+a:hover{
+	color: #5a93c9;
+}
+body{
+	background: var(--back);
+	color: var(--color);
+	
+	font-family: 'Roboto', sans-serif;
+}
+header{
+	height: 72px;
+	background: var(--header);
+	font-size: 30px;
+	
+}
+.content{
+	padding: 40px;
+	padding-top: 50px;
+}
+.title>h1{
+	text-align: center;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-size: clamp(28px, 8vw, 60px);
+	line-height: normal;
+}
+.buy-now{
+	
+	text-align: center;
+	padding-top: 49px;
+	
+}
+.buy-now{
+	font-size: clamp(5px, 9vw, 25px);
+	font-weight: 700;
+	color: #51ACFF;
+}
+.imac{
+	/* filter: contrast(10%); */
+	object-fit: contain;
+	width: 549px ;
+	height: max(1000px, 90%);
+}
+.mac{
+	display: flex;
+	justify-content: center;
+}
+
+.info{
+	
+}
+.info__container{
+	width: 640px;
+	display: grid;
+	justify-content: space-between;
+	grid-template-columns: repeat(3, 104px);
+}
+.plash{
+	width: 104px;
+}
+.plash>p{
+	font-weight: 400;
+	font-size: clamp(12px, 6vw, 16px);
+	margin: 0;
+}
+.plash>h1{
+	font-weight: 700;
+	font-size: 53px;
+	margin-bottom: 8px;
+}
+.plash>hr{
+	height: 4px;
+	background: linear-gradient(180deg, #FDA472 0%, #F7B78F 100%);
+	opacity: 1;
+	padding: 0;
+}
+
+footer{
+	margin-top: 51px;
+	background-color: var(--header);
+	padding-top: 48px;
+	justify-content: center;
+	display: grid;
+	overflow: hidden;
+}
+.icons{
+	font-size: 25px;
+	display: flex;
+	column-gap: 32px;
+	justify-content: center;
+	width: 100%;
+}
+.icons>.bi{
+	cursor: pointer;
+}
+.text{
+	width: 670px;
+	margin-top: 32px;
+	font-size: clamp(10px, 9vw, 15px);
+}
+.text>p{
+	color: #7D7D7D;
+	font-weight: 400;
+	
+}
+
